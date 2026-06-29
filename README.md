@@ -124,10 +124,18 @@ Confirmed the hardcoded strings on lines 30 and 32 of `ProgramRecordsList.jsx` h
 
 ## Pull Request
 
-[To be filled in during Phase IV]
+**PR Link:** https://github.com/openedx/frontend-app-learner-record/pull/685
+
+**PR Description:** Extracted the hardcoded 'Completed' and 'Partially Completed' status strings in ProgramRecordsList.jsx into i18n message descriptors using defineMessages and useIntl, replacing them with intl.formatMessage() calls so they can be translated into the user's language.
+
+**Maintainer Feedback:** Awaiting review. CLA submitted; waiting for DocuSign confirmation within 1 business day.
+
+**Status:** Awaiting review
 
 ---
 
 ## Learnings & Reflections
 
-[To be filled in after completion]
+The most important thing I learned was the difference between intl.formatMessage() and <FormattedMessage>. The JSX component works for rendering strings directly in markup, but when you are assigning a string to a variable in logic, you need the function form. Reading the existing components before writing anything was what made that clear.
+
+The credential conflict between two GitHub accounts on Windows was the most frustrating blocker. Clearing Windows Credential Manager and embedding the PAT directly in the remote URL fixed it. I would set that up correctly from the start next time.
